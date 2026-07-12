@@ -4,7 +4,7 @@ body{font-family:Arial,sans-serif;background:#f4f4f4;color:#222;line-height:1.6}
 .nav{position:sticky;top:0;background:#111;color:#fff;display:flex;justify-content:space-between;padding:18px 8%;align-items:center}
 .nav ul{display:flex;gap:20px;list-style:none}
 .nav a{color:#fff;text-decoration:none}
-.hero{height:60vh;min-height:400px;background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url('hero.png') center/cover;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
+.hero{height:60vh;min-height:600px;background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url('hero.png') center/cover;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
 .overlay h1{font-size:3rem}
 .btn{display:inline-block;margin:10px;padding:14px 28px;background:#c1121f;color:#fff;text-decoration:none;border-radius:6px}
 .outline{background:transparent;border:2px solid #fff}
