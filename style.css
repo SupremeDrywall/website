@@ -598,3 +598,32 @@ opacity:1;
 transform:translateY(0);
 
 }
+.hero-features{
+display:flex;
+justify-content:center;
+gap:40px;
+margin-top:35px;
+flex-wrap:wrap;
+}
+
+.hero-features div{
+display:flex;
+align-items:center;
+gap:10px;
+font-size:18px;
+font-weight:600;
+color:#ffffff;
+}
+
+.hero-features span{
+width:34px;
+height:34px;
+background:#e53935;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:bold;
+color:#fff;
+box-shadow:0 0 20px rgba(229,57,53,.45);
+}
