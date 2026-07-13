@@ -35,7 +35,7 @@ margin:auto;
 NAVIGATION
 =========================== */
 
-.navbar{
+nav{
 
 position:fixed;
 
@@ -104,15 +104,17 @@ url("hero.png");
 background-size:cover;
 background-position:center;
 
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
 }
 
 .overlay{
-max-width:850px;
-padding:20px;
+    position:absolute;
+    left:50%;
+    top:55%;
+    transform:translate(-50%,-50%);
+    width:100%;
+    max-width:900px;
+    text-align:center;
+    padding:20px;
 }
 
 .overlay h1{
