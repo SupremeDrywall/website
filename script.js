@@ -1,14 +1,63 @@
+// ==========================================
+// SUPREME DRYWALL WEBSITE V2
+// ==========================================
 
-document.querySelectorAll('a[href^="#"]').forEach(a=>{
- a.addEventListener('click',e=>{
-  e.preventDefault();
-  document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'});
- });
+// Smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const target = document.querySelector(this.getAttribute("href"));
+
+        if (target) {
+            target.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    });
 });
-const form = document.querySelector("form");
 
-form.addEventListener("submit", async function () {
-    setTimeout(() => {
-        form.reset();
-    }, 1000);
+
+// Form submission success
+const form = document.querySelector(".estimate-form");
+
+if(form){
+
+form.addEventListener("submit",function(){
+
+setTimeout(function(){
+
+alert("✅ Thank you! Your estimate request has been submitted. We will contact you shortly.");
+
+form.reset();
+
+},800);
+
+});
+
+}
+
+
+// Fade animation
+
+const observer=new IntersectionObserver((entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+},{threshold:.15});
+
+document.querySelectorAll(".service-card,.gallery-item,.why-card,.contact-card").forEach(el=>{
+
+el.classList.add("hidden");
+
+observer.observe(el);
+
 });
